@@ -1,0 +1,214 @@
+.container
+	.row.flex.flex-wrap
+		.col-12
+			section.cartstep.clearfix
+				.step.active
+					.number 1
+					.name Giỏ hàng
+				.step
+					.number 2
+					.name Đăng nhập
+				.step
+					.number 3
+					.name Thông tin
+				.step
+					.number 4
+					.name Thanh toán
+		.col-12
+			section.cart-page.clearfix
+				h1.carttitle Giỏ hàng của bạn (<strong>2</strong> sản phẩm)
+				//- .cartnotice Giỏ hàng có chứa sản phẩm được tham gia chương trình khuyến mãi. 
+					a(target="_blank" href="#") Xem chi tiết
+					.removenotice
+				table.carttable
+					thead
+						tr 
+							th Sản phẩm
+							th Đơn giá
+							th Số lượng
+							th Thành tiền
+					tbody
+						tr 
+							td.product 
+								a.productimg(href="#")
+									img(src="img/product/1.jpg", alt="")
+								.productdetail
+									.product-brand Samsonite
+									h3.productname
+										a(href="#") UPLITE SPL
+									.product-size 71cm Spinner
+									a.removeproduct(href="#") Bỏ sản phẩm
+							td.price
+								.new 500.000đ
+								//- .old 600.000đ
+								.sale Giảm 10%
+							td.amount
+								.input-number
+									.btn-spin.btn-dec -
+									input(type="text", value="1")
+									.btn-spin.btn-inc +
+							td.total 500.000đ
+						tr 
+							td.product 
+								a.productimg(href="#")
+									img(src="img/product/2.jpg", alt="")
+								.productdetail
+									.product-brand Samsonite
+									h3.productname
+										a(href="#") UPLITE SPL
+									.product-size 71cm Spinner
+									a.removeproduct(href="#") Bỏ sản phẩm
+							td.price
+								.new 500.000đ
+								//- .old 600.000đ
+								.sale Giảm 10%
+							td.amount
+								.input-number
+									.btn-spin.btn-dec -
+									input(type="text", value="1")
+									.btn-spin.btn-inc +
+							td.total 500.000đ
+				.totalamount Tạm tính: 
+					strong 1.000.000đ
+				.payment-des Giá chưa bao gồm VAT
+				.btn-wrap.clearfix
+					a.btn-back.hidden-sm-down(href="index.html") Tiếp tục mua hàng
+					a.hvr-sweep-to-right.btn-continue(href="cart1.html") Tiến hành thanh toán
+		.col-12
+			section.product-lastview.clearfix
+				h2.carttitle Sản phẩm đã xem
+				.cart-lastview-slide.product-list
+					.item
+						.product-col.wow.zoomIn
+							figure 
+								.promotion.new NEW
+								//-.product-popup
+									a.btn-viewdetail(href="#!") Chi tiết
+									a.btn-buy(href="#!") Mua hàng
+								a.product-img(href="#")
+									img(src="img/product/7.png", alt="")
+								figcaption
+									.product-color
+										.color(style='background: #5f5c5d')
+										.color(style='background: #737fd3')
+										.color(style='background: #6d5f97')
+									.product-brand 
+										a(href="#") American Tourister
+									h3.product-name
+										a(href="#") Bon Air
+									//- .product-kind Spinner 55/ 66
+									.product-price.clearfix
+										.old 6.900.000đ
+										.new 4.830.000đ
+									a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+					.item
+						.product-col.wow.zoomIn
+							figure 
+								.promotion.sale -30%
+								//-.product-popup
+									a.btn-viewdetail(href="#!") Chi tiết
+									a.btn-buy(href="#!") Mua hàng
+								a.product-img(href="#")
+									img(src="img/product/8.png", alt="")
+								figcaption
+									.product-color
+										.color(style='background: #5f5c5d')
+										.color(style='background: #737fd3')
+										.color(style='background: #6d5f97')
+									.product-brand 
+										a(href="#") Samsonite Black Label
+									h3.product-name
+										a(href="#") Cubelite
+									//- .product-kind Spinner 59/69/81
+									.product-price.clearfix
+										.old 6.900.000đ
+										.new 4.830.000đ
+									a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+					.item
+						.product-col.wow.zoomIn
+							figure 
+								//-.product-popup
+									a.btn-viewdetail(href="#!") Chi tiết
+									a.btn-buy(href="#!") Mua hàng
+								a.product-img(href="#")
+									img(src="img/product/9.png", alt="")
+								figcaption
+									.product-color
+										.color(style='background: #5f5c5d')
+										.color(style='background: #737fd3')
+										.color(style='background: #6d5f97')
+									.product-brand 
+										a(href="#") American Tourister
+									h3.product-name
+										a(href="#") Curio
+									//- .product-kind Spinner 55/80
+									.product-price.clearfix
+										.old 6.900.000đ
+										.new 4.830.000đ
+									a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+					.item
+						.product-col.wow.zoomIn
+							figure 
+								//-.product-popup
+									a.btn-viewdetail(href="#!") Chi tiết
+									a.btn-buy(href="#!") Mua hàng
+								a.product-img(href="#")
+									img(src="img/product/10.png", alt="")
+								figcaption
+									.product-color
+										.color(style='background: #5f5c5d')
+										.color(style='background: #737fd3')
+										.color(style='background: #6d5f97')
+									.product-brand 
+										a(href="#") Samsonite
+									h3.product-name
+										a(href="#") Pro-DLX 4
+									//- .product-kind Laptop Backpack L 16" Asia
+									.product-price.clearfix
+										.old 6.900.000đ
+										.new 4.830.000đ
+									a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+					.item
+						.product-col.wow.zoomIn
+							figure 
+								//-.product-popup
+									a.btn-viewdetail(href="#!") Chi tiết
+									a.btn-buy(href="#!") Mua hàng
+								a.product-img(href="#")
+									img(src="img/product/9.png", alt="")
+								figcaption
+									.product-color
+										.color(style='background: #5f5c5d')
+										.color(style='background: #737fd3')
+										.color(style='background: #6d5f97')
+									.product-brand 
+										a(href="#") Lipault
+									h3.product-name
+										a(href="#") Originale Plume
+									//- .product-kind Spinner 55
+									.product-price.clearfix
+										.old 6.900.000đ
+										.new 4.830.000đ
+									a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+					.item
+						.product-col.wow.zoomIn
+							figure 
+								//-.product-popup
+									a.btn-viewdetail(href="#!") Chi tiết
+									a.btn-buy(href="#!") Mua hàng
+								a.product-img(href="#")
+									img(src="img/product/1.png", alt="")
+								figcaption
+									.product-color
+										.color(style='background: #5f5c5d')
+										.color(style='background: #737fd3')
+										.color(style='background: #6d5f97')
+									.product-brand 
+										a(href="#") Lipault
+									h3.product-name
+										a(href="#") Originale Plume
+									//- .product-kind Spinner 55
+									.product-price.clearfix
+										.old 6.900.000đ
+										.new 4.830.000đ
+									a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>

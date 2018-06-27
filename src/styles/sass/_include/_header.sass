@@ -1,0 +1,493 @@
+@keyframes hotline
+	0%
+		color: $yellow
+	50%
+		color: $orange
+	100%
+		color: $yellow
+body
+	padding-top: 120px
+	&.homepage
+		padding-top: 100px
+	+media-breakpoint-down(lg)
+		padding-top: 60px
+	+media-breakpoint-down(md)
+header
+	+pos(abs,0 0 null 0)
+	z-index: 1000
+	+media-breakpoint-down(lg)
+		+pos(fix, 0 0 null 0)
+		box-shadow: 0 3px 20px color-rgba($black,0.1)
+		.container
+			max-width: 100%
+			width: 100%
+	&.hide
+		+media-breakpoint-up(xl)
+			+pos(fix, 0 0 null 0)
+			+transform(translateY(-100%))
+			background: $white
+			.headermenu
+				background: $gray
+	&.minimal
+		+media-breakpoint-up(xl)
+			+transform(translateY(0%))
+			+transition(all,0.5s)
+	.headertop
+		background: $white
+	.btn-showmenu
+		+fs(18rem)
+		width: 40px
+		height: 40px
+		line-height: 40px
+		text-align: center
+		background: $gray
+		color: $white
+		float: left
+		margin: 10px 15px 10px 0
+	.overlay
+		+pos(fix, 0 null 0 0)
+		right: 0
+		background: $black
+		opacity: 0.8
+		display: none
+	.sitelogo
+		padding: 30px 0
+		float: left
+		+media-breakpoint-down(lg)
+			padding: 20px 0
+		+media-breakpoint-down(sm)
+			padding: 24px 0
+		a
+			display: block
+			float: left
+		img
+			height: 20px
+			float: left
+			+media-breakpoint-down(sm)
+				height: 12px
+			@media (max-width: 320px)
+				height: 10px
+	.colright
+		float: right
+		.cart, .location, .wishlist, .login, .register
+			float: left
+			border-left: 1px solid darken($white,10%)
+			+media-breakpoint-down(lg)
+				width: 33.33%
+				border-bottom: 1px solid darken($white,10%)
+			ul
+				li
+					float: left
+					+media-breakpoint-down(lg)
+						width: 50%
+					+ li
+						border-left: 1px solid darken($white,10%)
+			.cart-toggle, a
+				cursor: pointer
+				+flexbox
+				flex-wrap: wrap
+				justify-content: center
+				align-items: center
+				align-content: center
+				width: 90px
+				height: 80px
+				+pos(rel,null)
+				+media-breakpoint-down(lg)
+					width: 100%
+				&:hover
+					background: darken($white,5%)
+				.amount
+					+pos(abs, 15px 25px null null)
+					z-index: 3
+					background: lighten($red,0%)
+					color: $white 
+					+fs(12rem)
+					line-height: 1
+					font-weight: 600
+					padding: 1px 5px
+					+bor-rad(50px)
+				.fa 
+					display: block
+					width: 100%
+					+fs(18rem)
+					text-align: center
+					color: $orange
+					margin-bottom: 5px
+				span 
+					display: block
+					width: 100%
+					text-align: center
+					+fs(15rem)
+					color: darken($white,40%)
+					+media-breakpoint-down(lg)
+		.cart
+			+media-breakpoint-down(lg)
+				border-left: none
+		.login
+			+media-breakpoint-down(lg)
+				width: 66.66%
+				border-left: none
+		.register
+			border-left: none
+			+media-breakpoint-down(lg)
+			a
+				background: $orange
+				+media-breakpoint-down(lg)
+					padding: 0px 5px
+				&:hover
+					background: darken($orange,10%)
+				.fa 
+					+fs(24rem)
+					color: $white
+				span
+					+fs(13rem)
+					color: $white
+	.headermenu
+		.mainmenu
+			background: $gray
+			+pos(rel,null)
+	.menu
+		float: left
+		+media-breakpoint-down(lg)
+			float: none
+			+pos(fix , 0 null 0 0)
+			z-index: 1000
+			background: url(../img/footerbg.jpg) top left repeat
+			width: 280px
+			+transform(translateX(-100%))
+			+transition(all,0.5s)
+			&.open
+				+transform(translateX(0))
+		.menulogo
+			.sitelogo
+				float: none
+				padding: 20px 0
+				background: $white
+				border-bottom: 2px solid $main
+				a
+					display: block
+					text-align: center
+					float: none
+				img  
+					height: 15px
+					float: none
+		.menucontent
+			+media-breakpoint-down(lg)
+				padding: 10px 0
+				max-height: calc(100vh - 64px)
+				overflow: auto
+		ul.menulink
+			> li
+				float: left
+				+media-breakpoint-down(lg)
+					float: none
+				> a
+					display: block
+					+fs(15rem)
+					text-transform: uppercase
+					line-height: 40px
+					padding: 0px 20px
+					color: $white
+					+transform(perspective(1px)translateZ(0))
+					+media-breakpoint-down(lg)
+						color: $main
+						line-height: 1.5
+						font-weight: 500
+						padding: 10px 20px
+
+					&:after
+						content: ''
+						+pos(abs, 100% 0 0 0)
+						background: color-rgba($white,0.1)
+						z-index: -1
+						+transition(all,0.2s)
+				&.sale
+					> a
+						color: $yellow
+						&:before
+							content: '\f0e7'
+							font-family: 'fontawesome'
+							margin-right: 5px
+						+media-breakpoint-down(lg)
+							color: $orange
+				&.event
+					> a
+						&:before
+							// content: '\f1ea'
+							// font-family: 'fontawesome'
+							// margin-right: 5px
+				.btn-showsub
+					width: 30px
+					height: 30px
+					line-height: 30px
+					text-align: center
+					+pos(abs,5px 10px null null)
+				&.hassub
+					+pos(rel,null)
+					.sub
+						+pos(abs, 100% null null 0)
+						background: $white
+						min-width: 450px
+						border: 1px solid darken($white,10%)
+						box-shadow: 0 3px 10px color-rgba($black,0.1)
+						display: none
+						+media-breakpoint-down(lg)
+							+pos(static,unset)
+							box-shadow: none
+							min-width: unset
+						ul
+							padding: 10px 5px
+							+flexbox
+							flex-wrap: wrap
+							li
+								width: 50%
+								padding: 0px 10px
+								+media-breakpoint-down(lg)
+									width: 100%
+								a
+									display: block
+									+fs(12rem)
+									text-transform: uppercase
+									color: $main
+									padding: 8px
+									white-space: nowrap
+									&:hover
+										color: $orange
+				&.hasmega
+					+media-breakpoint-down(lg)
+						+pos(rel,null)
+					.mega
+						+pos(abs, 100% 0 null 0)
+						z-index: 5
+						padding: 20px 0px
+						background: $white
+						+flexbox
+						flex-wrap: wrap
+						border: 1px solid darken($white,10%)
+						display: none
+						box-shadow: 0 3px 10px color-rgba($black,0.1)
+						+media-breakpoint-down(lg)
+							+pos(static,unset)
+							box-shadow: none
+						.megasub
+							width: 20%
+							border-right: 1px solid darken($white,10%)
+							padding: 0px 15px
+							padding-bottom: 10px
+							+media-breakpoint-down(lg)
+								width: 100%
+								border: none
+							&:nth-child(5), &:nth-child(10), &:nth-child(15)
+								border-right: none
+							.brand-logo
+								+flexbox
+								height: 50px
+								justify-content: center
+								align-items: center
+								border-bottom: 1px solid darken($white,10%)
+								img 
+									max-width: 80%
+									max-height: 80%
+							ul
+								padding: 5px
+								li
+									a
+										display: block
+										+fs(12rem)
+										text-transform: uppercase
+										color: $main
+										padding: 2px
+										&:hover
+											color: $orange
+									&:first-child
+										margin-bottom: 5px
+							.mega-banner
+								display: block
+								+pos(rel,null)
+								.label
+									+pos(abs, 10px null null 0px)
+									z-index: 5
+									+fs(12rem)
+									line-height: 20px
+									padding: 0px 10px
+									color: $white
+									&.bestsellers
+										background: $blue
+									&.newarrivals
+										background: $red
+								.img
+									+flexbox
+									height: 250px
+									justify-content: center
+									align-items: center
+									+pos(rel,null)
+									img
+										max-width: 80%
+										max-height: 80%
+				&:hover
+					+media-breakpoint-up(xl)
+						> a
+							&:after
+								top: 0
+						.sub
+							display: block
+						.mega
+							+flexbox
+				&.active
+					+media-breakpoint-up(xl)
+						> a
+							&:after
+								top: 0
+					+media-breakpoint-down(lg)
+						> a
+							background: color-rgba($black,0.1)
+		.colright
+			+media-breakpoint-down(lg)
+				background: color-rgba($black,0.1)
+				border-top: 1px solid darken($white,10%)
+				// border-bottom: 1px solid darken($white,10%)
+	.hotline
+		float: left
+		line-height: 40px
+		+media-breakpoint-down(lg)
+			float: right
+			line-height: 20px
+			padding: 20px 0
+		a
+			color: $yellow
+			+fs(18rem)
+			font-weight: 500
+			animation-name: hotline
+			animation-duration: 3s
+			animation-iteration-count: infinite
+			&:before
+				content: '\f095'
+				margin-right: 10px
+			+media-breakpoint-down(lg)
+				display: block
+				line-height: 1
+				color: $gray
+				+fs(0)
+				&:before
+					content: '\f095'
+					+fs(20rem)
+					line-height: 1
+					margin: 0
+			&:hover
+				color: $orange
+	.search
+		float: left
+		+pos(rel,null)
+		padding: 10px 0
+		margin-left: 20px
+		+media-breakpoint-down(lg)
+			float: right
+			margin-right: 0
+			padding: 20px 0
+			margin-left: 10px
+			+media-breakpoint-down(sm)
+				// margin-left: 10px
+		.searchtoggle
+			+fs(16rem)
+			color: $white
+			text-align: center
+			border-left: 1px solid $white
+			line-height: 20px
+			width: 40px
+			text-align: center
+			cursor: pointer
+			+media-breakpoint-down(lg)
+				color: $gray
+				border: none
+				+fs(20rem)
+			&:hover
+				+media-breakpoint-up(xl)
+					color: $orange
+		.searchwrap
+			+pos(abs, 100% 0 null null)
+			width: 200px
+			visibility: hidden
+			opacity: 0
+			+transition(all,0.5s)
+			&.open
+				visibility: visible
+				opacity: 1
+			.searchbox
+				+flexbox
+				width: 200px
+				+bor-rad(3)
+				background: $gray
+				input
+					width: calc(100% - 36px)
+					border: none
+					background: none
+					line-height: 36px
+					padding: 0px 15px
+					color: $white
+					+fs(13rem)
+				.searchbutton
+					width: 36px
+					height: 36px
+					color: $white
+					line-height: 36px
+	.language
+		float: left
+		border-left: 1px solid $white
+		line-height: 20px
+		margin: 10px 0
+		padding-left: 10px
+		margin-right: 20px
+		+media-breakpoint-down(lg)
+			float: right
+			padding: 0
+			margin: 20px 0px 20px 5px
+		a
+			display: block
+			line-height: 20px
+			height: 20px
+			img
+				height: 24px
+				margin-top: -2px
+
+.popup-contact
+	display: none
+	background: $white
+	.popup-wrap
+		padding: 20px 10px
+	.fancybox-close-small
+		&:after
+			+fs(28rem)
+			background: none
+			color: $red
+			+transition(all,0.5s)
+		&:hover
+			&:after
+				color: darken($red,10%)
+	.popup-form
+		.module-title
+			+fs(22rem)
+			text-transform: uppercase
+			text-align: center
+			color: $orange
+			font-weight: 500
+			margin-bottom: 20px
+		.form-group
+			margin-bottom: 15px
+			input, select
+				width: 100%
+				border: none
+				border-bottom: 1px solid darken($white,10%)
+				padding: 10px 0
+				+fs(14rem)
+		input[type="submit"]
+			display: inline-block
+			+bor-rad(50px)
+			text-transform: uppercase
+			padding: 0px 100px
+			background: $orange
+			width: auto
+			color: $white
+			line-height: 40px
+			border: none
+			&:hover
+				background: lighten($orange,10%)

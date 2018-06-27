@@ -1,0 +1,25 @@
+
+.sidebar-category
+	margin-bottom: 30px
+	// padding: 10px 15px
+	.small-title
+		color: $main
+		background: none
+		padding: 8px 0px
+		+fs(16rem)
+		text-transform: uppercase
+		font-weight: 500
+		margin: 0
+	ul 
+		border-top: 2px solid $orange
+		background: darken($white,3%)
+		li
+			border-bottom: 1px dashed darken($white,15%)
+			a
+				display: block
+				+fs(14rem)
+				padding: 10px 15px
+				color: $main
+			&:hover, &.active
+				a
+					color: $orange

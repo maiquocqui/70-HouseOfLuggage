@@ -1,0 +1,1543 @@
+.container
+	section.breadcrumb-banner.clearfix
+		.img 
+			img(src="img/breadcrumb/1.jpg", alt="")
+		h3.pagename
+		ol.breadcrumb(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Trang chủ
+				meta(itemprop='position', content='1')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Flash Sale
+				meta(itemprop='position', content='2')
+			//- li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Tin thị trường
+				meta(itemprop='position', content='3')
+	section.flashsale-page.clearfix
+		.home-title.text-center CHƯƠNG TRÌNH BẮT ĐẦU TỪ 9H - 23H NGÀY 28.09.2017
+		.flashsale-wrap
+			.title-wrap.clearfix
+				.title FLASH SALE
+				time Chỉ còn: 
+					strong 10:00:00
+			ul#myTab.nav.nav-tabs(role='tablist')
+				li.nav-item
+					a.nav-link(data-toggle='tab', href='#tab1', role='tab', aria-controls='home', aria-expanded='true')
+						time 09:00 - 10:59
+						.status.end KẾT THÚC
+				li.nav-item
+					a.nav-link(data-toggle='tab', href='#tab2', role='tab', aria-controls='profile')
+						time 11:00 - 12:59
+						.status.end KẾT THÚC
+				li.nav-item
+					a.nav-link.active(data-toggle='tab', href='#tab3', role='tab', aria-controls='profile')
+						time 13:00 - 14:59
+						.status.on ĐANG BÁN
+				li.nav-item
+					a.nav-link(data-toggle='tab', href='#tab4', role='tab', aria-controls='profile')
+						time 15:00 - 16:59
+						.status.soon SẮP BÁN
+				li.nav-item
+					a.nav-link(data-toggle='tab', href='#tab5', role='tab', aria-controls='profile')
+						time 17:00 - 18:59
+						.status.soon SẮP BÁN
+				li.nav-item
+					a.nav-link(data-toggle='tab', href='#tab6', role='tab', aria-controls='profile')
+						time 19:00 - 20:59
+						.status.soon SẮP BÁN
+				li.nav-item
+					a.nav-link(data-toggle='tab', href='#tab7', role='tab', aria-controls='profile')
+						time 21:00 - 22:59
+						.status.soon SẮP BÁN
+			#myTabContent.tab-content
+				#tab1.tab-pane.fade(role='tabpanel', aria-labelledby='')
+					.product-list2
+						.row
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/1.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/2.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/3.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/4.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/5.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") 72h
+											//- .product-kind Spinner 55/68/78
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/6.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Red
+											h3.product-name
+												a(href="#") Eilyn
+											//- .product-kind Backpack
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/7.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/8.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/9.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/10.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+				#tab2.tab-pane.fade(role='tabpanel', aria-labelledby='')
+					.product-list2
+						.row
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/1.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/2.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/3.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/4.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/5.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") 72h
+											//- .product-kind Spinner 55/68/78
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/6.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Red
+											h3.product-name
+												a(href="#") Eilyn
+											//- .product-kind Backpack
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/7.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/8.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/9.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.off KẾT THÚC
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/10.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+				#tab3.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='')
+					.product-list2
+						.row
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/1.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/2.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/3.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/4.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/5.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") 72h
+											//- .product-kind Spinner 55/68/78
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/6.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Red
+											h3.product-name
+												a(href="#") Eilyn
+											//- .product-kind Backpack
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/7.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/8.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/9.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/10.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+				#tab4.tab-pane.fade(role='tabpanel', aria-labelledby='')
+					.product-list2
+						.row
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/1.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/2.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/3.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/4.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/5.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") 72h
+											//- .product-kind Spinner 55/68/78
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/6.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Red
+											h3.product-name
+												a(href="#") Eilyn
+											//- .product-kind Backpack
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/7.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/8.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/9.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/10.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+				#tab5.tab-pane.fade(role='tabpanel', aria-labelledby='')
+					.product-list2
+						.row
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/1.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/2.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/3.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/4.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/5.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") 72h
+											//- .product-kind Spinner 55/68/78
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/6.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Red
+											h3.product-name
+												a(href="#") Eilyn
+											//- .product-kind Backpack
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/7.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/8.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/9.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/10.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+				#tab6.tab-pane.fade(role='tabpanel', aria-labelledby='')
+					.product-list2
+						.row
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/1.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/2.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/3.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/4.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/5.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") 72h
+											//- .product-kind Spinner 55/68/78
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/6.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Red
+											h3.product-name
+												a(href="#") Eilyn
+											//- .product-kind Backpack
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/7.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/8.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/9.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/10.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+				#tab7.tab-pane.fade(role='tabpanel', aria-labelledby='')
+					.product-list2
+						.row
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/1.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/2.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/3.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/4.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/5.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") 72h
+											//- .product-kind Spinner 55/68/78
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/6.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Red
+											h3.product-name
+												a(href="#") Eilyn
+											//- .product-kind Backpack
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/7.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Bon Air
+											//- .product-kind Spinner 55/ 66
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/8.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite Black Label
+											h3.product-name
+												a(href="#") Cubelite
+											//- .product-kind Spinner 59/69/81
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/9.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") American Tourister
+											h3.product-name
+												a(href="#") Curio
+											//- .product-kind Spinner 55/80
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							article.col-6.col-sm-4.col-md-3.col-custom
+								.product-col
+									figure.wow.zoomIn
+										.product-status.on SẮP BÁN
+										.promotion.sale <i class="fa fa-bolt" aria-hidden="true"></i> Flash Sale -70%
+										a.product-img(href="#")
+											img(src="img/product/10.png", alt="")
+										figcaption
+											.product-color
+												.color(style='background: #5f5c5d')
+												.color(style='background: #737fd3')
+												.color(style='background: #6d5f97')
+											.product-brand 
+												a(href="#") Samsonite
+											h3.product-name
+												a(href="#") Pro-DLX 4
+											//- .product-kind Laptop Backpack L 16" Asia
+											.product-price.clearfix
+												.old 6.900.000đ
+												.new 4.830.000đ
+											a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>

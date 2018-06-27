@@ -1,0 +1,680 @@
+.container
+	section.product-page.clearfix
+		.row.flex.flex-wrap
+			.col-12.col-lg-6
+				.slidewrap.flex.flex-wrap.wow.fadeInLeft
+					.product-slide
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/1.jpg")
+								img(src="img/product/1.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/2.jpg")
+								img(src="img/product/2.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/3.jpg")
+								img(src="img/product/3.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/4.jpg")
+								img(src="img/product/4.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/5.jpg")
+								img(src="img/product/5.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/6.jpg")
+								img(src="img/product/6.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/7.jpg")
+								img(src="img/product/7.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/8.jpg")
+								img(src="img/product/8.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/9.jpg")
+								img(src="img/product/9.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/10.jpg")
+								img(src="img/product/10.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/11.jpg")
+								img(src="img/product/11.jpg", alt="")
+						.item
+							a.fancybox(data-fancybox="gallery", href="img/product/12.jpg")
+								img(src="img/product/12.jpg", alt="")
+					.product-nav
+						.item
+							.img
+								img(src="img/product/1.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/2.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/3.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/4.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/5.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/6.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/7.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/8.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/9.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/10.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/11.jpg", alt="")
+						.item
+							.img
+								img(src="img/product/12.jpg", alt="")
+			.col-12.col-lg-6
+				section.product-info.clearfix.wow.fadeInRight
+					.promotion.new New
+					.product-brand SAMSONITE
+					h1.product-name Lite-Shock
+					.product-category Spinner 78cm TSA
+					.product-price.clearfix
+						.new 4.900.000đ
+						.old 5.600.000đ
+					.product-overview.clearfix
+						ul.clearfix
+							li Ultra durable zip
+							li 4 easy-running and quiet double wheels
+							li Patented braking system
+							li Unique identification code
+							li TSA combination lock
+							li 10-year worldwide warranty
+					.product-option.flex.flex-wrap.clearfix
+						.product-color
+							.label Màu sắc:
+							ul
+								li.color
+									a.active(href="#" style='background: #eee' data-toggle="tooltip" data-placement="top" title="Bạc")
+								li.color
+									a(href="#" style='background: #f00' data-toggle="tooltip" data-placement="top" title="Đỏ")
+								li.color
+									a(href="#" style='background: #00e' data-toggle="tooltip" data-placement="top" title="Xanh")
+						.product-size
+							.label Kích thước:
+							ul
+								li.size
+									a(href="#") Spinner 55cm TSA
+								li.size
+									a(href="#") Spinner 70cm TSA
+								li.size
+									a.active(href="#") Spinner 78cm TSA
+							a.btn-sizechart(data-fancybox data-src="#sizechart" href="javascript:;" ) <i class="fa fa-users" aria-hidden="true"></i> Mô phỏng theo nhận dạng
+							#sizechart.popup-sizechart.clearfix.hidden
+								h3.popup-title Mô phỏng theo nhận dạng
+								.row
+									.col-12.col-md-5
+										.des Điền vào chiều cao và giới tính của bạn để chọn kích cỡ vali phù hợp
+										.option-group
+											.module-title Thông tin của bạn
+											.form-group
+												label Cao
+												select 
+													option 1
+												label M
+												input(type="text" value="80")
+												label CM
+											.form-group
+												label Giới tính:
+												input#male(type="radio", name="gender")
+												label(for="male") Nam
+												input#female(type="radio", name="gender")
+												label(for="male") Nữ
+										.option-group
+											.module-title Các kích cỡ sẵn có
+											.size-choice
+												a(href="#") 55cm
+												a(href="#") 69cm
+												a.active(href="#") 81cm
+										a.btn-choose(href="#") Chọn
+									.col-12.col-md-7
+										.img
+											img(src="img/sizechart.jpg", alt="")
+					.input-number
+						.btn-spin.btn-dec -
+						input(type="text" value="1")
+						.btn-spin.btn-inc +
+					.btn-wrap.clearfix
+						a.hvr-shutter-out-horizontal.btn-buy(href="#!") Cho vào giỏ hàng
+						a.btn-wishlist(href="#!" data-toggle="tooltip" data-placement="right" title="Yêu thích") <i class="fa fa-heart" aria-hidden="true"></i>
+					.shipping-notice Miễn phí giao hàng toàn quốc
+					.share
+						.label Share:
+						a(href="#") <i class="fa fa-facebook" aria-hidden="true"></i>
+						a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
+						a(href="#") <i class="fa fa-instagram" aria-hidden="true"></i>
+						a(href="#") <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+			.col-12
+				section.product-description.clearfix
+					nav.nav.nav-tabs(role='tablist')
+						a.nav-item.nav-link.active(data-toggle='tab', href='#tab1', role='tab', aria-controls='tab1', aria-expanded='true') Mô tả sản phẩm
+						a.nav-item.nav-link(data-toggle='tab', href='#tab2', role='tab', aria-controls='tab2') Thông số kỹ thuật
+						a.nav-item.nav-link(data-toggle='tab', href='#tab3', role='tab', aria-controls='tab3') View 360<sup>o</sup>
+						a.nav-item.nav-link(data-toggle='tab', href='#tab4', role='tab', aria-controls='tab4') Video
+					.tab-content
+						#tab1.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='nav-home-tab')
+							.content
+								.title Mô tả sản phẩm
+								//- p Staying true to the many great stories that are intrinsically woven into Cosmolite’s design DNA, Samsonite has reinvented this Curv classic by including the latest technologies and design aesthetics. Evolved but unchanged, the new Cosmolite has retained its iconic silhouette but is now lighter than before thanks to the use of more elegant and lightweight components.
+								ul
+									li 360° multidirectional spinner wheels for easy maneuverability
+									li Functional elastic cross ribbons to secure packed items
+									li Bottom grip for when you need to lift your suitcase while travelling
+									li Zipper protection to keep your belongings safe
+									li Divider pad for easy and organised packing
+									li Integrated 3 digit TSA combination lock 
+							.feature-list
+								.module-title The CAUMARTIN slim cabin case is the lightest case from DELSEY, featuring a next generation polycarbonate shell.
+								.feature-col
+									figure
+										.feature-icon
+											img(src="img/icon/1.png", alt="")
+										figcaption
+											.feature-name Slim carry-on luggage
+											.feature-des Luggage that can be taken into the cabin when flying with airlines imposing a maximum depth of 20 cm. These dimensions comply with most low-cost airline cabin restrictions (see our overview of luggage standards in the Customer Service section).
+								.feature-col
+									figure
+										.feature-icon
+											img(src="img/icon/2.png", alt="")
+										figcaption
+											.feature-name TSA Combination Lock
+											.feature-des Luggage that can be taken into the cabin when flying with airlines imposing a maximum depth of 20 cm. These dimensions comply with most low-cost airline cabin restrictions (see our overview of luggage standards in the Customer Service section).
+								.feature-col
+									figure
+										.feature-icon
+											img(src="img/icon/3.png", alt="")
+										figcaption
+											.feature-name Super light
+											.feature-des Luggage that can be taken into the cabin when flying with airlines imposing a maximum depth of 20 cm. These dimensions comply with most low-cost airline cabin restrictions (see our overview of luggage standards in the Customer Service section).
+								.feature-col
+									figure
+										.feature-icon
+											img(src="img/icon/4.png", alt="")
+										figcaption
+											.feature-name Worldwide guarantee
+											.feature-des Luggage that can be taken into the cabin when flying with airlines imposing a maximum depth of 20 cm. These dimensions comply with most low-cost airline cabin restrictions (see our overview of luggage standards in the Customer Service section).
+								.feature-col
+									figure
+										.feature-icon
+											img(src="img/icon/5.png", alt="")
+										figcaption
+											.feature-name Double wheels
+											.feature-des Luggage that can be taken into the cabin when flying with airlines imposing a maximum depth of 20 cm. These dimensions comply with most low-cost airline cabin restrictions (see our overview of luggage standards in the Customer Service section).
+								.feature-col
+									figure
+										.feature-icon
+											img(src="img/icon/6.png", alt="")
+										figcaption
+											.feature-name Limited 5-Year Warranty
+											.feature-des Luggage that can be taken into the cabin when flying with airlines imposing a maximum depth of 20 cm. These dimensions comply with most low-cost airline cabin restrictions (see our overview of luggage standards in the Customer Service section).
+							section.product-contain.clearfix
+								.small-title.text-center.wow.fadeInUp Sức chứa của vali
+								.row
+									.col-6.col-sm-4.col-md-3.col-lg-2
+										.contain
+											figure
+												.contain-img
+													img(src="img/icon/p1.png", alt="")
+												figcaption
+													.number 4
+													.name Áo
+									.col-6.col-sm-4.col-md-3.col-lg-2
+										.contain
+											figure
+												.contain-img
+													img(src="img/icon/p2.png", alt="")
+												figcaption
+													.number 1
+													.name Túi
+									.col-6.col-sm-4.col-md-3.col-lg-2
+										.contain
+											figure
+												.contain-img
+													img(src="img/icon/p3.png", alt="")
+												figcaption
+													.number 2
+													.name Giày
+									.col-6.col-sm-4.col-md-3.col-lg-2
+										.contain
+											figure
+												.contain-img
+													img(src="img/icon/p4.png", alt="")
+												figcaption
+													.number 2
+													.name Quần dài
+									.col-6.col-sm-4.col-md-3.col-lg-2
+										.contain
+											figure
+												.contain-img
+													img(src="img/icon/p5.png", alt="")
+												figcaption
+													.number 1
+													.name Áo mưa
+									.col-6.col-sm-4.col-md-3.col-lg-2
+										.contain
+											figure
+												.contain-img
+													img(src="img/icon/p6.png", alt="")
+												figcaption
+													.number 1
+													.name Laptop
+						#tab2.tab-pane.fade(role='tabpanel', aria-labelledby='nav-profile-tab')
+							.content
+								.title Thông số kỹ thuật
+								.table-responsive
+									table.product-table
+										tr 
+											td SKU:
+											td BF9*68003
+										tr
+											td Colour:
+											td Matte Grey Checks
+										tr
+											td Material:
+											td ABS/PC
+										tr
+											td Dimension:
+											td 78 x 53 x 36 cm
+										tr
+											td Weight:
+											td 5.3 kg
+										tr
+											td Volume:
+											td 114 L
+										tr
+											td Warranty:
+											td Limited 3 year global warranty
+						#tab3.tab-pane.fade(role='tabpanel', aria-labelledby='nav-profile-tab')
+							.view360
+								.productimg
+									img(src="img/product/3.jpg", alt="")
+								.view360img
+									img(src="img/view360.png", alt="")
+						#tab4.tab-pane.fade(role='tabpanel', aria-labelledby='nav-profile-tab')
+							.content
+								.video
+									iframe(width="100%" height="500" src="https://www.youtube.com/embed/dRGT6JGcmlI" frameborder="0" allowfullscreen)
+
+				
+			.col-12
+				section.product-other.clearfix
+					.small-title.wow.fadeInUp Sản phẩm liên quan
+					.other-slide.product-list
+						.item
+							.product-col.wow.zoomIn
+								figure 
+									.promotion.new NEW
+									//-.product-popup
+										a.btn-viewdetail(href="#!") Chi tiết
+										a.btn-buy(href="#!") Mua hàng
+									a.product-img(href="#")
+										img(src="img/product/7.png", alt="")
+									figcaption
+										.product-color
+											.color(style='background: #5f5c5d')
+											.color(style='background: #737fd3')
+											.color(style='background: #6d5f97')
+										.product-brand 
+											a(href="#") American Tourister
+										h3.product-name
+											a(href="#") Bon Air
+										//- .product-kind Spinner 55/ 66
+										.product-price.clearfix
+											.old 6.900.000đ
+											.new 4.830.000đ
+										a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+						.item
+							.product-col.wow.zoomIn
+								figure 
+									.promotion.sale -30%
+									//-.product-popup
+										a.btn-viewdetail(href="#!") Chi tiết
+										a.btn-buy(href="#!") Mua hàng
+									a.product-img(href="#")
+										img(src="img/product/8.png", alt="")
+									figcaption
+										.product-color
+											.color(style='background: #5f5c5d')
+											.color(style='background: #737fd3')
+											.color(style='background: #6d5f97')
+										.product-brand 
+											a(href="#") Samsonite Black Label
+										h3.product-name
+											a(href="#") Cubelite
+										//- .product-kind Spinner 59/69/81
+										.product-price.clearfix
+											.old 6.900.000đ
+											.new 4.830.000đ
+										a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+						.item
+							.product-col.wow.zoomIn
+								figure 
+									//-.product-popup
+										a.btn-viewdetail(href="#!") Chi tiết
+										a.btn-buy(href="#!") Mua hàng
+									a.product-img(href="#")
+										img(src="img/product/9.png", alt="")
+									figcaption
+										.product-color
+											.color(style='background: #5f5c5d')
+											.color(style='background: #737fd3')
+											.color(style='background: #6d5f97')
+										.product-brand 
+											a(href="#") American Tourister
+										h3.product-name
+											a(href="#") Curio
+										//- .product-kind Spinner 55/80
+										.product-price.clearfix
+											.old 6.900.000đ
+											.new 4.830.000đ
+										a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+						.item
+							.product-col.wow.zoomIn
+								figure 
+									//-.product-popup
+										a.btn-viewdetail(href="#!") Chi tiết
+										a.btn-buy(href="#!") Mua hàng
+									a.product-img(href="#")
+										img(src="img/product/10.png", alt="")
+									figcaption
+										.product-color
+											.color(style='background: #5f5c5d')
+											.color(style='background: #737fd3')
+											.color(style='background: #6d5f97')
+										.product-brand 
+											a(href="#") Samsonite
+										h3.product-name
+											a(href="#") Pro-DLX 4
+										//- .product-kind Laptop Backpack L 16" Asia
+										.product-price.clearfix
+											.old 6.900.000đ
+											.new 4.830.000đ
+										a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+						.item
+							.product-col.wow.zoomIn
+								figure 
+									//-.product-popup
+										a.btn-viewdetail(href="#!") Chi tiết
+										a.btn-buy(href="#!") Mua hàng
+									a.product-img(href="#")
+										img(src="img/product/9.png", alt="")
+									figcaption
+										.product-color
+											.color(style='background: #5f5c5d')
+											.color(style='background: #737fd3')
+											.color(style='background: #6d5f97')
+										.product-brand 
+											a(href="#") Lipault
+										h3.product-name
+											a(href="#") Originale Plume
+										//- .product-kind Spinner 55
+										.product-price.clearfix
+											.old 6.900.000đ
+											.new 4.830.000đ
+										a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+						.item
+							.product-col.wow.zoomIn
+								figure 
+									//-.product-popup
+										a.btn-viewdetail(href="#!") Chi tiết
+										a.btn-buy(href="#!") Mua hàng
+									a.product-img(href="#")
+										img(src="img/product/1.png", alt="")
+									figcaption
+										.product-color
+											.color(style='background: #5f5c5d')
+											.color(style='background: #737fd3')
+											.color(style='background: #6d5f97')
+										.product-brand 
+											a(href="#") Lipault
+										h3.product-name
+											a(href="#") Originale Plume
+										//- .product-kind Spinner 55
+										.product-price.clearfix
+											.old 6.900.000đ
+											.new 4.830.000đ
+										a.btn-buy(href="#" data-toggle="tooltip" data-placement="right" title="Thêm vào giỏ hàng") <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+section.home-photo.home-photo2.clearfix
+	.container
+		h2.home-title #HOUSEOFLUGGAGE TRÊN MỌI CHẶNG ĐƯỜNG
+		.photo-slide
+			.item
+				a.photo(href="#photo1" data-fancybox="gal1")
+					img(src="img/photo/5.jpg", alt="")
+				#photo1.popup-product
+					.row
+						.col-12.col-md-6
+							.popup-img
+								img(src="img/photo/5.jpg", alt="")
+						.col-12.col-md-6
+							.insta-user
+								figure
+									a.img(href="#")
+										img(src="img/user/1.jpg", alt="")
+									figcaption
+										.name
+											a(href="#") pelez0
+							.share
+								.label Share
+								a(href="#") <i class="fa fa-facebook" aria-hidden="true"></i>
+								a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
+								a(href="#") <i class="fa fa-instagram" aria-hidden="true"></i>
+							.product-list
+								.row
+									article.col-6.col-md-6
+										.product-col
+											figure 
+												.promotion.new NEW
+												a.product-img(href="#")
+													img(src="img/product/1.png", alt="")
+												figcaption
+													.product-color
+														.color(style='background: #5f5c5d')
+														.color(style='background: #737fd3')
+														.color(style='background: #6d5f97')
+													.product-brand 
+														a(href="#") American Tourister
+													h3.product-name
+														a(href="#") Bon Air
+									article.col-6.col-md-6
+										.product-col
+											figure 
+												.promotion.sale -30%
+												a.product-img(href="#")
+													img(src="img/product/2.png", alt="")
+												figcaption
+													.product-color
+														.color(style='background: #5f5c5d')
+														.color(style='background: #737fd3')
+														.color(style='background: #6d5f97')
+													.product-brand 
+														a(href="#") Samsonite Black Label
+													h3.product-name
+														a(href="#") Cubelite
+
+
+			.item
+				a.photo(href="#photo2" data-fancybox="gal1")
+					img(src="img/photo/2.jpg", alt="")
+				#photo2.popup-product
+					.row
+						.col-12.col-md-6
+							.popup-img
+								img(src="img/photo/2.jpg", alt="")
+						.col-12.col-md-6
+							.insta-user
+								figure
+									a.img(href="#")
+										img(src="img/user/1.jpg", alt="")
+									figcaption
+										.name
+											a(href="#") pelez0
+							.share
+								.label Share
+								a(href="#") <i class="fa fa-facebook" aria-hidden="true"></i>
+								a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
+								a(href="#") <i class="fa fa-instagram" aria-hidden="true"></i>
+							.product-list
+								.row
+									article.col-6.col-md-6
+										.product-col
+											figure 
+												.promotion.new NEW
+												a.product-img(href="#")
+													img(src="img/product/1.png", alt="")
+												figcaption
+													.product-color
+														.color(style='background: #5f5c5d')
+														.color(style='background: #737fd3')
+														.color(style='background: #6d5f97')
+													.product-brand 
+														a(href="#") American Tourister
+													h3.product-name
+														a(href="#") Bon Air
+									article.col-6.col-md-6
+										.product-col
+											figure 
+												.promotion.sale -30%
+												a.product-img(href="#")
+													img(src="img/product/2.png", alt="")
+												figcaption
+													.product-color
+														.color(style='background: #5f5c5d')
+														.color(style='background: #737fd3')
+														.color(style='background: #6d5f97')
+													.product-brand 
+														a(href="#") Samsonite Black Label
+													h3.product-name
+														a(href="#") Cubelite
+
+			.item
+				a.photo(href="#photo3" data-fancybox="gal1")
+					img(src="img/photo/3.jpg", alt="")
+				#photo3.popup-product
+					.row
+						.col-12.col-md-6
+							.popup-img
+								img(src="img/photo/3.jpg", alt="")
+						.col-12.col-md-6
+							.insta-user
+								figure
+									a.img(href="#")
+										img(src="img/user/1.jpg", alt="")
+									figcaption
+										.name
+											a(href="#") pelez0
+							.share
+								.label Share
+								a(href="#") <i class="fa fa-facebook" aria-hidden="true"></i>
+								a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
+								a(href="#") <i class="fa fa-instagram" aria-hidden="true"></i>
+							.product-list
+								.row
+									article.col-6.col-md-6
+										.product-col
+											figure 
+												.promotion.new NEW
+												a.product-img(href="#")
+													img(src="img/product/1.png", alt="")
+												figcaption
+													.product-color
+														.color(style='background: #5f5c5d')
+														.color(style='background: #737fd3')
+														.color(style='background: #6d5f97')
+													.product-brand 
+														a(href="#") American Tourister
+													h3.product-name
+														a(href="#") Bon Air
+									article.col-6.col-md-6
+										.product-col
+											figure 
+												.promotion.sale -30%
+												a.product-img(href="#")
+													img(src="img/product/2.png", alt="")
+												figcaption
+													.product-color
+														.color(style='background: #5f5c5d')
+														.color(style='background: #737fd3')
+														.color(style='background: #6d5f97')
+													.product-brand 
+														a(href="#") Samsonite Black Label
+													h3.product-name
+														a(href="#") Cubelite
+
+			.item
+				a.photo(href="#photo4" data-fancybox="gal1")
+					img(src="img/photo/4.jpg", alt="")
+				#photo4.popup-product
+					.row
+						.col-12.col-md-6
+							.popup-img
+								img(src="img/photo/4.jpg", alt="")
+						.col-12.col-md-6
+							.insta-user
+								figure
+									a.img(href="#")
+										img(src="img/user/1.jpg", alt="")
+									figcaption
+										.name
+											a(href="#") pelez0
+							.share
+								.label Share
+								a(href="#") <i class="fa fa-facebook" aria-hidden="true"></i>
+								a(href="#") <i class="fa fa-twitter" aria-hidden="true"></i>
+								a(href="#") <i class="fa fa-instagram" aria-hidden="true"></i>
+							.product-list
+								.row
+									article.col-6.col-md-6
+										.product-col
+											figure 
+												.promotion.new NEW
+												a.product-img(href="#")
+													img(src="img/product/1.png", alt="")
+												figcaption
+													.product-color
+														.color(style='background: #5f5c5d')
+														.color(style='background: #737fd3')
+														.color(style='background: #6d5f97')
+													.product-brand 
+														a(href="#") American Tourister
+													h3.product-name
+														a(href="#") Bon Air
+									article.col-6.col-md-6
+										.product-col
+											figure 
+												.promotion.sale -30%
+												a.product-img(href="#")
+													img(src="img/product/2.png", alt="")
+												figcaption
+													.product-color
+														.color(style='background: #5f5c5d')
+														.color(style='background: #737fd3')
+														.color(style='background: #6d5f97')
+													.product-brand 
+														a(href="#") Samsonite Black Label
+													h3.product-name
+														a(href="#") Cubelite
+
+			.item
+				a.photo(href="img/photo/1.jpg" data-fancybox="gal")
+					img(src="img/photo/1.jpg", alt="")
+			.item
+				a.photo(href="img/photo/2.jpg" data-fancybox="gal")
+					img(src="img/photo/2.jpg", alt="")
+		.btn-wrap
+			a.btn-photo(href="#") Thư viện ảnh
+			a.btn-photo(href="#") Upload photo

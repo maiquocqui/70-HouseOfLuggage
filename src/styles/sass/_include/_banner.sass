@@ -1,0 +1,31 @@
+.bannerwrap
+	margin-top: -20px
+	+media-breakpoint-down(lg)
+		margin-top: 0
+	.banner
+		margin: 0px -30px
+		.banner-caption
+			background: color-rgba($blue,0.7)
+			padding: 15px 25px
+			+fs(24rem)
+			color: $white
+			+media-breakpoint-down(sm)
+				+fs(20rem)
+			strong 
+				+fs(24rem)
+				+media-breakpoint-down(sm)
+					+fs(20rem)
+		.hermes 
+			.tp-bullet
+				width: 12px
+				height: 12px
+				background: color-rgba($white,0.5)
+				border: none
+				box-shadow: none
+				&:after
+					background: $orange
+					box-shadow: none
+					border: none
+				&.selected
+					&:after
+						background: $orange

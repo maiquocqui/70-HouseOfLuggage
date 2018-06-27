@@ -1,0 +1,364 @@
+.page-title
+	+fs(24rem)
+	text-transform: uppercase
+	font-weight: 600
+	margin-bottom: 30px
+	// border-left: 3px solid $blue
+	// padding-left: 10px
+	&:after
+		content: ''
+		display: block
+		width: 50px
+		height: 2px
+		background: $main
+		margin-top: 10px
+	&.text-center
+		&:after
+			margin: 10px auto 0
+
+.news-sidebar
+	margin-bottom: 30px
+	.post-list
+		border-top: 1px dashed darken($white,15%)
+	.post
+		border-bottom: 1px dashed darken($white,15%)
+		padding: 10px 0
+		&:hover
+			background: darken($white,3%)
+		figure 
+			+flexbox
+			.post-img
+				width: 70px
+				height: 70px
+				img 
+					width: 100%
+					height: 70px
+					object-fit: cover
+			figcaption
+				width: calc(100% - 70px)
+				padding-left: 10px
+				.post-name 
+					font-weight: 700
+					line-height: 1.4
+					+fs(14rem)
+					a 
+						color: $main
+						&:hover
+							color: $blue
+				time 
+					+fs(12rem)
+					font-weight: 600
+					color: darken($white,40%)
+.news-page
+	// margin-bottom: 30px
+	.btn-wrap
+		text-align: center
+		margin: 15px 0 30px
+		.btn-loadmore
+			display: inline-block
+			padding: 7px 20px
+			// +bor-rad(5px)
+			color: $main
+			+fs(12rem)
+			// font-weight: 600
+			text-transform: uppercase
+			border: 1px solid darken($white,10%)
+			&:hover
+				background: $orange
+				color: $white
+				border-color: $orange
+			&:after
+				content: '\f105'
+				margin-left: 5px
+	.hot-news
+		.news-col.big
+			figure
+				.news-img
+					display: block
+				figcaption
+					padding: 20px 0
+					.news-name
+						+fs(18rem)
+						font-weight: 500
+						text-transform: uppercase
+						line-height: 1.5
+						margin-bottom: 5px
+						a
+							color: $main
+							&:hover
+								color: $orange
+					time
+						display: block
+						color: darken($white,40%)
+						+fs(13rem)
+						line-height: 1.5
+						margin-bottom: 5px
+						&:before
+							content: '\f073'
+							margin-right: 5px
+					.news-des
+						+fs(14rem)
+						color: darken($white,60%)
+		.news-col.small
+			margin-bottom: 15px
+			padding-bottom: 15px
+			border-bottom: 1px solid darken($white,10%)
+			&:last-child
+				margin-bottom: 0
+				padding-bottom: 0
+				border-bottom: none
+			figure
+				+flexbox
+				flex-wrap: wrap
+				.news-img
+					display: block
+					width: 180px
+				figcaption
+					width: calc(100% - 180px)
+					padding-left: 15px
+					.news-name
+						+fs(16rem)
+						font-weight: 500
+						line-height: 1.3
+						margin-bottom: 5px
+						a
+							color: $main
+							&:hover
+								color: $orange
+					time
+						display: block
+						color: darken($white,40%)
+						+fs(13rem)
+						line-height: 1.5
+						margin-bottom: 5px
+						&:before
+							content: '\f073'
+							margin-right: 5px
+	.news-banner
+		margin: 40px 0
+		a
+			display: block
+		img
+			width: 100%
+	.news-list
+		.news-col
+			margin-bottom: 15px
+			padding-bottom: 15px
+			border-bottom: 1px solid darken($white,10%)
+			figure
+				+flexbox
+				flex-wrap: wrap
+				.news-img
+					display: block
+					width: 160px
+					border: 2px solid darken($white,10%)
+					img
+						width: 100%
+				figcaption
+					width: 100%
+					// padding-left: 15px
+					.news-name
+						+fs(16rem)
+						font-weight: 500
+						line-height: 1.3
+						margin-bottom: 5px
+						a
+							color: $main
+							&:hover
+								color: $orange
+					time
+						display: block
+						color: darken($white,40%)
+						+fs(13rem)
+						line-height: 1.5
+						margin-bottom: 5px
+						&:before
+							content: '\f073'
+							margin-right: 5px
+			&.big
+				figure
+					figcaption
+						width: calc(100% - 160px)
+						padding-left: 15px
+	.good-news
+		.news-col
+			figure
+				.news-img
+					display: block
+					img
+						width: 100%
+				figcaption
+					padding: 15px 0
+					.news-name
+						font-weight: 500
+						line-height: 1.5
+						margin-bottom: 5px
+						a
+							color: $orange
+							&:hover
+								color: darken($orange,10%)
+					time
+						display: block
+						color: darken($white,40%)
+						+fs(13rem)
+						line-height: 1.5
+						margin-bottom: 5px
+						&:before
+							content: '\f073'
+							margin-right: 5px
+					
+	.share 
+		border-top: 1px solid darken($white,10%)
+		padding-top: 10px
+		margin-bottom: 40px
+	.news-info
+		margin-top: -20px
+		margin-bottom: 20px
+		time
+			display: block
+			color: darken($white,40%)
+			+fs(13rem)
+			line-height: 1.5
+			margin-bottom: 5px
+			&:before
+				content: '\f073'
+				margin-right: 5px
+.other-news
+	margin-bottom: 30px
+
+.sidebar-banner
+	a
+		display: block
+		margin-bottom: 30px
+
+
+// OURTIPS
+.ourtips-page
+	margin: 40px 0
+	.ourtips-info
+		margin-top: -20px
+		margin-bottom: 20px
+		time
+			display: block
+			color: darken($white,40%)
+			+fs(13rem)
+			line-height: 1.5
+			margin-bottom: 5px
+			&:before
+				content: '\f073'
+				margin-right: 5px
+
+.hot-ourtips
+	.ourtips-col
+		display: block
+		margin-bottom: 30px
+		figure
+			+pos(rel,null)
+			.ourtips-img
+				img
+					width: 100%
+					height: 235px
+					object-fit: cover
+					+media-breakpoint-down(lg)
+						height: 220px
+					+media-breakpoint-down(xs)
+						height: 180px
+			figcaption
+				text-align: center
+				+pos(abs, 0 null 0 0)
+				right: 0
+				background: color-rgba($black,0.5)
+				+flexbox
+				flex-wrap: wrap
+				justify-content: center
+				align-items: center
+				align-content: center
+				.ourtips-name
+					width: 100%
+					+fs(18rem)
+					font-weight: 500
+					color: $white
+					text-transform: uppercase
+					margin-bottom: 10px
+					padding: 0px 30px
+					line-height: 1.5
+					+media-breakpoint-down(xs)
+						+fs(16rem)
+				.link
+					+fs(13rem)
+					text-transform: uppercase
+					padding: 5px 20px
+					border: 1px solid $white
+					color: $white
+					+transition(all,0.3s)
+					&:hover
+						background: $orange
+						border-color: $orange
+						color: $white
+		&.big
+			figure
+				.ourtips-img
+					img
+						height: 500px
+						+media-breakpoint-down(lg)
+							height: 470px
+						+media-breakpoint-down(xs)
+							height: 300px
+.ourtips-list
+	+ .pages
+		margin-top: 0
+	.col-12
+		margin-bottom: 30px
+	.ourtips-col
+		display: block
+		height: 100%
+		border-bottom: 2px solid darken($white,10%)
+		figure
+			+pos(rel,null)
+			.ourtips-img
+				img
+					width: 100%
+			figcaption
+				padding: 15px 0
+				.ourtips-name
+					+fs(16rem)
+					color: $orange
+					line-height: 1.5
+					font-weight: 500
+					margin-bottom: 5px
+				time
+					display: block
+					color: darken($white,40%)
+					+fs(13rem)
+					line-height: 1.5
+					margin-bottom: 5px
+					&:before
+						content: '\f073'
+						margin-right: 5px
+				.ourtips-des
+					+fs(14rem)
+					color: darken($white,40%)
+					margin-bottom: 5px
+.sidebar-video
+	margin: 30px 0
+	.video
+		+pos(rel,null)
+		.video-img
+			+pos(rel,null)
+		img
+			width: 100%
+		.video-play
+			+pos(abs, 0 null 0 0)
+			right: 0
+			background: color-rgba($black,0.5) url(../img/play.png) center center no-repeat
+			background-size: 20% auto
+		figcaption
+			padding: 10px 0
+			.video-name
+				+fs(15rem)
+				font-weight: 500
+				line-height: 1.4
+				a
+					color: $main
+					&:hover
+						color: $orange
